@@ -8,18 +8,30 @@
 </head>
 <body>
   <main class="card">
-    <h1>Distance Converter</h1>
+    <div class="header">
+      <span class="header-icon">🌍</span>
+      <h1>Distance Converter</h1>
+      <p class="subtitle">Kilometers ⇄ Miles</p>
+    </div>
 
     <div class="field">
       <label for="km">Kilometers</label>
-      <input type="number" id="km" placeholder="Enter kilometers" inputmode="decimal">
+      <div class="input-group">
+        <input type="number" id="km" placeholder="0" inputmode="decimal">
+        <span class="unit">km</span>
+      </div>
     </div>
 
-    <div class="swap">⇅</div>
+    <div class="swap" aria-hidden="true">
+      <span>⇅</span>
+    </div>
 
     <div class="field">
       <label for="miles">Miles</label>
-      <input type="number" id="miles" placeholder="Enter miles" inputmode="decimal">
+      <div class="input-group">
+        <input type="number" id="miles" placeholder="0" inputmode="decimal">
+        <span class="unit">mi</span>
+      </div>
     </div>
   </main>
 
