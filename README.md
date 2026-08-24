@@ -1,12 +1,19 @@
-# distance-converter
+# Roadside Distance Converter
 
-A simple web app that converts distances between kilometers and miles, in both directions.
+A small, scenic web app that converts distances between kilometers and miles in either direction. It is styled as a vintage car dashboard, complete with a brass-rimmed distance gauge, animated needle, and odometer-style result display.
+
+## Highlights
+
+- Convert kilometers to miles and miles to kilometers.
+- Watch the dashboard needle respond to each converted result.
+- Enjoy a sunny illustrated road-trip backdrop with trees, mountains, and a winding road.
+- Works directly in a modern browser—no build tooling or dependencies needed.
 
 ## Usage
 
-1. Enter a number in the **Value** field.
-2. Choose a direction from the dropdown — **Kilometers → Miles** or **Miles → Kilometers**.
-3. Click **Convert** to see the result.
+1. Enter a distance in the **Trip reading** field.
+2. Choose **Kilometers → Miles** or **Miles → Kilometers** from **Conversion route**.
+3. Click **Convert distance** to update the odometer and gauge.
 
 ## Running locally
 

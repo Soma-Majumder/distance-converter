@@ -7,27 +7,15 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
-    <h1>Distance Converter</h1>
-
-    <form id="converter-form">
-      <div class="field">
-        <label for="value">Value</label>
-        <input type="number" id="value" placeholder="Enter a number" step="any" required>
-      </div>
-
-      <div class="field">
-        <label for="direction">Direction</label>
-        <select id="direction">
-          <option value="km-to-mi">Kilometers → Miles</option>
-          <option value="mi-to-km">Miles → Kilometers</option>
-        </select>
-      </div>
-
-      <button type="submit">Convert</button>
-    </form>
-
-    <p id="result" aria-live="polite"></p>
+  <div class="sun" aria-hidden="true"></div>
+  <main class="dashboard-shell">
+    <section class="dashboard" aria-labelledby="app-title">
+      <div class="dash-screws" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <header class="dashboard-header"><p class="eyebrow">Scenic route instruments</p><h1 id="app-title">Distance Converter</h1><p class="subheading">Find your bearings, anywhere the road goes.</p></header>
+      <div class="gauge" aria-hidden="true"><div class="gauge-face"><span class="gauge-number n0">0</span><span class="gauge-number n1">20</span><span class="gauge-number n2">40</span><span class="gauge-number n3">60</span><span class="gauge-number n4">80</span><span class="gauge-number n5">100</span><div class="needle" id="needle"></div><div class="needle-cap"></div><span class="gauge-label">DISTANCE</span></div></div>
+      <form id="converter-form" class="controls"><div class="field"><label for="value">Trip reading</label><div class="input-wrap"><input type="number" id="value" placeholder="0.00" step="any" inputmode="decimal" required><span id="input-unit">km</span></div></div><div class="field direction-field"><label for="direction">Conversion route</label><div class="select-wrap"><select id="direction"><option value="km-to-mi">Kilometers → Miles</option><option value="mi-to-km">Miles → Kilometers</option></select></div></div><button type="submit"><span>Convert distance</span><b>→</b></button></form>
+      <div class="odometer" aria-live="polite" aria-atomic="true"><span class="odometer-label">Converted reading</span><p id="result">Ready to roll</p></div><p class="footer-note">Take the long way home <span aria-hidden="true">✦</span></p>
+    </section>
   </main>
 
   <script src="script.js"></script>
