@@ -17,7 +17,13 @@ A small, scenic web app that converts distances between kilometers and miles in 
 
 ## Running locally
 
-Open `index.html` directly in a browser, or serve the folder with any static file server, e.g.:
+```bash
+npm start
+```
+
+This serves the app at `http://localhost:3000`.
+
+Alternatively, open `index.html` directly in a browser, or serve the folder with any static file server, e.g.:
 
 ```bash
 python3 -m http.server
