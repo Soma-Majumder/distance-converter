@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Distance Converter</title>
+<title>Distance Converter | Miles, Kilometers & More</title>
+<meta name="description" content="Convert miles, kilometers, and more in seconds—no math required. A fast, free distance converter with a scenic vintage dashboard.">
+<meta name="keywords" content="distance converter, miles to kilometers, kilometers to miles, km to miles, miles to km, road trip calculator">
+<meta name="author" content="Distance Converter">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://soma-majumder.github.io/distance-converter/">
+<link rel="icon" type="image/png" sizes="512x512" href="long-distance.png">
+<link rel="apple-touch-icon" href="long-distance.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Distance Converter">
+<meta property="og:title" content="Distance Coverter">
+<meta property="og:description" content="How Far Is That? Convert miles, kilometers, and more in seconds—no math required.">
+<meta property="og:url" content="https://soma-majumder.github.io/distance-converter/">
+<meta property="og:image" content="https://soma-majumder.github.io/distance-converter/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Distance Coverter — How Far Is That? Convert miles, kilometers, and more in seconds—no math required.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Distance Coverter">
+<meta name="twitter:description" content="How Far Is That? Convert miles, kilometers, and more in seconds—no math required.">
+<meta name="twitter:image" content="https://soma-majumder.github.io/distance-converter/social-card.png">
+<meta name="twitter:image:alt" content="Distance Coverter — How Far Is That? Convert miles, kilometers, and more in seconds—no math required.">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Distance Converter","description":"Convert miles, kilometers, and more in seconds—no math required.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://soma-majumder.github.io/distance-converter/","image":"https://soma-majumder.github.io/distance-converter/social-card.png"}</script>
 </head>
 <body>
   <div class="sun" aria-hidden="true"></div>
   <main class="dashboard-shell">
     <section class="dashboard" aria-labelledby="app-title">
       <div class="dash-screws" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <header class="dashboard-header"><p class="eyebrow">Scenic route instruments</p><h1 id="app-title">Distance Converter</h1><p class="subheading">Find your bearings, anywhere the road goes.</p></header>
+      <header class="dashboard-header"><img class="brand-icon" src="long-distance.png" alt="Map with destination pins"><div><p class="eyebrow">Scenic route instruments</p><h1 id="app-title">Distance Converter</h1><p class="subheading">Find your bearings, anywhere the road goes.</p></div></header>
       <div class="gauge" aria-hidden="true"><div class="gauge-face"><span class="gauge-number n0">0</span><span class="gauge-number n1">20</span><span class="gauge-number n2">40</span><span class="gauge-number n3">60</span><span class="gauge-number n4">80</span><span class="gauge-number n5">100</span><div class="needle" id="needle"></div><div class="needle-cap"></div><span class="gauge-label">DISTANCE</span></div></div>
       <form id="converter-form" class="controls"><div class="field"><label for="value">Trip reading</label><div class="input-wrap"><input type="number" id="value" placeholder="0.00" step="any" inputmode="decimal" required><span id="input-unit">km</span></div></div><div class="field direction-field"><label for="direction">Conversion route</label><div class="select-wrap"><select id="direction"><option value="km-to-mi">Kilometers → Miles</option><option value="mi-to-km">Miles → Kilometers</option></select></div></div><button type="submit"><span>Convert distance</span><b>→</b></button></form>
       <div class="odometer" aria-live="polite" aria-atomic="true"><span class="odometer-label">Converted reading</span><p id="result">Ready to roll</p></div><p class="footer-note">Take the long way home <span aria-hidden="true">✦</span></p>

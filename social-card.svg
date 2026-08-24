@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Distance Coverter</title>
+  <desc id="description">How Far Is That? Convert miles, kilometers, and more in seconds—no math required.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8bd6e6"/><stop offset=".58" stop-color="#d3f0b1"/><stop offset="1" stop-color="#f6d17a"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#53605d"/><stop offset="1" stop-color="#172524"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#233632" flood-opacity=".3"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="1030" cy="105" r="65" fill="#fff4af" opacity=".9"/>
+  <path d="M0 260C150 190 225 215 390 285c168 70 370-73 520-35 123 31 176-27 290-75v455H0Z" fill="#4c9e6d"/>
+  <path d="M0 350c180-90 321-40 485 35 142 65 334-89 497-64 91 14 152-43 218-76v385H0Z" fill="#25745d"/>
+  <path d="M490 630H1030L825 330c-44-45-76-50-113-1Z" fill="url(#road)"/>
+  <path d="M750 630h37l-17-55Zm-26-95h22l-10-38Zm-22-72h14l-6-25Z" fill="#f7eac0" opacity=".95"/>
+  <g fill="#1f5d49"><path d="M80 340l49-167 48 167Z"/><path d="M152 363l65-216 62 216Z"/><path d="M1010 340l46-171 51 171Z"/><path d="M1080 365l65-228 68 228Z"/></g>
+  <g filter="url(#shadow)"><rect x="72" y="73" width="712" height="373" rx="28" fill="#1b2a28" stroke="#d3a44c" stroke-width="8"/><rect x="87" y="88" width="682" height="343" rx="19" fill="none" stroke="#5c4320" stroke-width="4"/></g>
+  <image href="long-distance.png" x="112" y="125" width="116" height="116"/>
+  <text x="112" y="285" fill="#f7e8bf" font-family="Georgia, serif" font-size="68" font-weight="700">Distance Coverter</text>
+  <text x="115" y="336" fill="#edc66f" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">HOW FAR IS THAT?</text>
+  <text x="115" y="379" fill="#d8ead8" font-family="Arial, sans-serif" font-size="25">Convert miles, kilometers, and more in seconds—</text>
+  <text x="115" y="414" fill="#d8ead8" font-family="Arial, sans-serif" font-size="25">no math required.</text>
+  <text x="956" y="575" fill="#f7e8bf" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">DISTANCE CONVERTER</text>
+</svg>
