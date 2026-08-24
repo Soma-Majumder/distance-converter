@@ -1,0 +1,9 @@
+{
+  "name": "distance-converter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small, scenic web app that converts distances between kilometers and miles.",
+  "scripts": {
+    "start": "npx --yes serve -l 3000 ."
+  }
+}
