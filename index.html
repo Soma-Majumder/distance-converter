@@ -8,31 +8,26 @@
 </head>
 <body>
   <main class="card">
-    <div class="header">
-      <span class="header-icon">🌍</span>
-      <h1>Distance Converter</h1>
-      <p class="subtitle">Kilometers ⇄ Miles</p>
-    </div>
+    <h1>Distance Converter</h1>
 
-    <div class="field">
-      <label for="km">Kilometers</label>
-      <div class="input-group">
-        <input type="number" id="km" placeholder="0" inputmode="decimal">
-        <span class="unit">km</span>
+    <form id="converter-form">
+      <div class="field">
+        <label for="value">Value</label>
+        <input type="number" id="value" placeholder="Enter a number" step="any" required>
       </div>
-    </div>
 
-    <div class="swap" aria-hidden="true">
-      <span>⇅</span>
-    </div>
-
-    <div class="field">
-      <label for="miles">Miles</label>
-      <div class="input-group">
-        <input type="number" id="miles" placeholder="0" inputmode="decimal">
-        <span class="unit">mi</span>
+      <div class="field">
+        <label for="direction">Direction</label>
+        <select id="direction">
+          <option value="km-to-mi">Kilometers → Miles</option>
+          <option value="mi-to-km">Miles → Kilometers</option>
+        </select>
       </div>
-    </div>
+
+      <button type="submit">Convert</button>
+    </form>
+
+    <p id="result" aria-live="polite"></p>
   </main>
 
   <script src="script.js"></script>
