@@ -2,6 +2,8 @@
 
 A small, scenic web app that converts distances between kilometers and miles in either direction. It is styled as a vintage car dashboard, complete with a brass-rimmed distance gauge, animated needle, and odometer-style result display.
 
+**Live demo:** [distance-converter-classic.vercel.app](https://distance-converter-classic.vercel.app/)
+
 ## Highlights
 
 - Convert kilometers to miles and miles to kilometers.
